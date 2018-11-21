@@ -1,0 +1,43 @@
+//
+// Mobile
+//
+.tab-list {
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid $c-gray-dark;
+    display: flex;
+    font-family: $f-secondary;
+    font-size: .8rem;
+    font-weight: 500;
+    list-style: none;
+    margin: 0 -2rem;
+    padding: 0 1.25rem;
+    &__link {
+        border-bottom: 2px solid transparent;
+        color: $c-link;
+        line-height: 1rem;
+        padding: .5rem;
+        text-decoration: none;
+        &.active,
+        &:hover,
+        &:focus {
+            border-bottom-color: $c-primary;
+            color: $c-primary;
+        }
+        @extend %toUppercase;
+    }
+}
+
+//
+// Tablet
+//
+@include media($tablet) {
+  .tab-list {
+    justify-content: flex-end;
+    min-height: 2.8rem;
+    &__link {
+        border-bottom: 2px solid transparent;
+        padding: .85rem 2.5rem;
+    }
+  }
+}

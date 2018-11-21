@@ -1,0 +1,36 @@
+<h2 class="tab-content__title">
+    <strong>{{role}}</strong>
+    {{title}}
+    <span class="tab-content__ranking">
+        <svg height="12" width="12">
+            <use xlink:href="#star" />
+        </svg>
+        <svg height="12" width="12">
+            <use xlink:href="#star" />
+        </svg>
+        <svg height="12" width="12">
+            <use xlink:href="#star" />
+        </svg>
+        <svg height="12" width="12">
+            <use xlink:href="#star" />
+        </svg>
+    </span>
+</h2>
+<div class="tab-content__row">
+    {{#each perfil}}
+        <div class="tab-content__option">
+            <h3 class="tab-content__option-title">{{title}}</h3>
+            <ul>
+                {{#each skills}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <div class="tab-content__option-button">
+                <label for="{{name}}">
+                    <input type="radio" name="option" id="{{name}}">
+                    <span>Elegir régimen</span>
+                </label>
+            </div>
+        </div>
+    {{/each}} 
+</div>

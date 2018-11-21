@@ -1,0 +1,22 @@
+// Colors
+$c-primary:     #001841;
+$c-secondary:   #105AA3;
+$c-shade:       #C9E4F9;
+$c-link:        #4BA7EE;
+$c-link-hover:  #003970;
+$c-yellow:      #FAC937;
+$c-green:       #6DC138;
+$c-gray-light:  #FAFAFA;
+$c-gray-medium: #F9F9F9;
+$c-gray-dark:   #E2E3E7;
+$c-dark:        #77797E;
+
+// Typography
+$f-primary:         'Roboto',      sans-serif;
+$f-secondary:  'Roboto Slab',      sans-serif;
+
+// MediaQueries Breakpoints
+// See https://github.com/carloscabo/mqbe and ./utils for both js and sass media queries helpers
+$mobile: 360px;
+$tablet: 768px;
+$desktop: 1200px;

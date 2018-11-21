@@ -1,0 +1,17 @@
+.row {
+  width: 100%;
+  clear: both;
+  @extend %clearfix;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  clear: both;
+  @extend %clearfix;
+}
+

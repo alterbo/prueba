@@ -1,0 +1,17 @@
+body {
+    background-color: $c-gray-light;
+    color: $c-primary;
+    font-family: $f-primary;
+}
+
+.wrapper {
+    background-color: $c-gray-medium;
+    border: 1px solid $c-gray-dark;
+    border-bottom-width: 2px;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    min-width: $mobile;
+    @include media($desktop) {
+        max-width: $desktop;
+    }
+}
